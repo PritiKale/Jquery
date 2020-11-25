@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#div1,#javadata{
+							padding: 5px;
+							text-align: center;
+							background-color: crimson;
+							border: 1px slide black;
+					    }
+
+		 #javadata{
+		 			padding: 50px;
+		 			 
+				  }
+	</style>
+
+    <script  src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#div1").click(function()
+			{
+				$("#javadata").slideUp(2000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>Slide Up Effect</h1>
+	<div id="div1">
+		<h3>Java Technology</h3>
+		<hr>
+	</div>
+	<div id="javadata">Java Data
+		<p>Introduction to java</p>
+		<p>If Else</p>
+		<p>Loops in java</p>
+		<p>oop in java</p>
+		<p>Array</p>
+		<p>Inheritance</p>
+		<p>Polymorphism</p>
+    </div>	
+	<br><br> 
+	
+
+	
+	
+
+</body>
+</html>

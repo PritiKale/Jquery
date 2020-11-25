@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+	 #div1,#div2,#div3{
+	 	  				height: 100px;
+	 	  				width: 100px;
+	 	  				display: none;
+	    			  }	
+
+	 #div4,#div5,#div6{
+	 					height: 100px;
+	 	  				width: 100px;
+	                  }
+    </style>
+
+    <script  src="jquery.js"></script>
+
+    <script type="text/javascript">
+    	$(document).ready(function()
+    	{
+    		$("#div1").fadeIn();
+    		$("#div2").fadeIn(2000);
+    		$("#div3").fadeIn(3000)
+
+    		$("#div4").fadeOut(3000);
+    		$("#div5").fadeOut(2000);
+    		$("#div6").fadeOut(1000);
+
+
+    	});
+    </script>
+
+	
+</head>
+<body>
+
+ <div id="div1" style="background-color: red"></div><br>
+ <div id="div2" style="background-color: blue"></div><br>
+ <div id="div3" style="background-color: green"></div>
+
+<hr>
+
+<h1>FadeOut Effect</h1>
+<br><br>
+ <div id="div4" style="background-color: red"></div><br>
+ <div id="div5" style="background-color: blue"></div> <br>
+ <div id="div6" style="background-color: green"></div>
+
+</body>
+</html>

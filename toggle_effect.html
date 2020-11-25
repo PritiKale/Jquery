@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script  src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+
+			$("#b1").click(function()
+			{
+				$("p").hide(2000);
+			});
+
+
+			$("#b2").click(function()
+			{
+				$("p").show(2000);
+			});
+
+
+			$("#b3").click(function()
+			{
+				$("p").toggle(2000);
+			});
+		});
+	</script>
+</head>
+<body>
+ 
+ 	<p>Jonny Jonny Yes Papa<br>
+ 	   Eating sugar no papa<br>
+ 	   tellng lie no papa<br>
+ 	   open mouth ha ha ha<br><br>
+
+ 	   Jonny Jonny Yes Papa<br>
+ 	   Eating sugar no papa<br>
+ 	   tellng lie no papa<br>
+ 	   open mouth ha ha ha<br><br>
+ 	</p>
+
+ 	<br><br>
+   <button id="b1">Hide Poem</button>
+
+   <button id="b2">Show Poem</button>
+
+   <button id="b3">Hide & Show</button>
+</body>
+</html>

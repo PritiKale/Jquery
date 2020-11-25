@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script  src="jquery.js"></script>
+	<script type="text/javascript">
+		 $(document).ready(function()
+		{
+			$("#academic").click(function()
+			{
+				$("#aca1").show();
+				$("#job1").hide();
+				$("#pro").hide();
+			});
+
+			$("#job").click(function()
+			{   
+
+				$("#aca1").hide();
+				$("#div1").css("margin-left","100px");
+				$("#job1").show();
+				$("#pro").hide();
+			});
+
+
+           $("#profession").click(function()
+			{
+				$("#aca1").hide();
+				$("#div2").css("margin-left","200px");
+				$("#job1").hide();
+				$("#pro").show();
+				
+			});
+
+		});
+
+	</script>
+
+	<style type="text/css">
+
+		#aca1,#job1,#pro{
+			             display: none;
+		                }
+        body{
+        	font-family: calibri;
+        }
+
+	</style>
+</head>
+<body>
+ <form>
+ 	<center>
+ 		<br><br>
+ 		<table cellpadding="10" >
+
+ 			<tr>
+ 				<td colspan="3"><h1>Training Enquiry form</h1></td>
+ 			</tr>
+
+ 			<tr>
+				<td>Name</td>
+				<td colspan="2"><input type="text" name="nm"></td>
+			</tr>
+
+			<tr>
+				<td>City</td>
+				<td colspan="2"><input type="text" name="city"></td>
+			</tr>
+
+			<tr>
+				<td><input type="radio" value= "Academic" name="check" id="academic">Academic</td>
+				 <td><input type="radio" value="Job Oriented" name="check" id="job">Job Oriented</td>
+				 <td><input type="radio" value="profession" name="check" id="profession">Profession</td>
+
+			</tr>
+             
+
+			      <tr id="aca1" style="display: none">
+			    	<td><ul>
+			      		<li>c</li>
+			      		<li>c++</li>
+			      		<li>db</li>
+			      		<li>php</li>
+			      	</td></ul>
+		         </tr>
+
+		         
+		         <tr id="job1" style="display: none">
+			    	<td colspan="3">
+			    		<div id="div1">
+			    		<ul>
+			      		<li>UI Developer</li>
+			      		<li>Php Developer</li>
+			      		<li>Python Developer</li>
+			      		<li>php</li>
+				     </ul>
+				 	</div>
+					</td>
+		         </tr>
+		     
+			     
+			    
+			      <tr id="pro" style="display: none">
+			    	<td colspan="3">
+			    		 <div id="div2">
+			    		<ul>
+			      		<li>oracle</li>
+			      		<li>unix shell</li>
+			      		<li>Dejango</li>
+			      		<li>Angular</li>
+			      	    </ul>
+
+			      	  </div>
+			      	</td>
+		         </tr>
+			     
+
+			<tr>
+				<td>Email</td>
+				<td colspan="2"><input type="text" name="email"></td>
+			</tr>
+   
+   			<tr>
+				<td>Address</td>
+				<td colspan="2"><input type="text" name="add"></td>
+			</tr>
+
+			<tr>
+				<td><button>Submit</button></td>
+				<td><button>Reset</button></td>
+			</tr>
+ 		</table>
+ 	</center>
+ </form>
+</body>
+</html>

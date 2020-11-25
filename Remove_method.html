@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+		table,th,td{
+						border:1px solid black;
+				   }
+	
+	</style>
+
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+	
+	   $(document).ready(function()
+	   {
+	   	 $("#button1").click(function()
+	   	 {
+	   	 	$("#r2").remove();
+	   	 });
+	   });
+	</script>
+
+</head>
+<body>
+	<center>
+<br><br><br>
+<table cellpadding="10">
+	<tr>
+		<th>Rollno</th>
+		<th>Name</th>
+		<th>City</th>
+	</tr>
+
+	<tr id="r1">
+		<td>101</td>
+		<td>PRITI</td>
+		<td>PUNE</td>
+	</tr>
+
+	<tr id="r2">
+		<td>102</td>
+		<td>ASHOK</td>
+		<td>BOSTAN</td>
+	</tr>
+
+	<tr id="r3">
+		<td>103</td>
+		<td>CHETAN</td>
+		<td>MUMBAI</td>
+	</tr>
+
+	<tr id="r4">
+		<td>104</td>
+		<td>AMIT</td>
+		<td>KARAD</td>
+	</tr>
+
+	<tr id="r5">
+		<td>105</td>
+		<td>AMOL</td>
+		<td>KERAL</td>
+	</tr>
+</table>
+<br><br>
+
+  <input type="button" value="Click Here" id="button1">
+</center>
+</body>
+</html>

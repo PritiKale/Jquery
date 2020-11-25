@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.myclass{
+					font-size: 50px;
+					padding: 10px;
+					width: 300px;
+					background: teal;
+				}
+	</style>
+
+	<script src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			
+			// $("input").focus(function()
+			// {
+			// 	alert("You click inside textbox");
+			// });
+
+
+			$("input").blur(function()
+			{
+				alert("Don't click outside textbox");
+			});
+	
+		});
+	</script>
+
+</head>
+<body>
+
+name<input type="text" name="">
+
+</body>
+</html>

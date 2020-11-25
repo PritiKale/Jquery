@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script  src="jquery.js"></script>
+
+	<script type="text/javascript">
+       $(document).ready(function()
+		{
+			$("#exp").click(function()
+			{
+				$("#id1").show(1500);
+				$("#id2").show(1500);
+				$("#id3").show(1500);
+			});
+
+			$("#fre").click(function()
+			{
+				$("#id1").hide(1000);
+				$("#id2").hide(1000);
+				$("#id3").hide(1000);
+			});
+
+		});
+	</script>
+	<style type="text/css">
+
+		#id1,#id2,#id3{
+			           display: none;
+		              }
+	</style>
+</head>
+<body>
+<form>
+	<center>
+		<br><br>
+		<table  cellpadding="10">
+			
+			<tr>
+				<td colspan="2"><h1>Job Registration Form</h1></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="nm"></td>
+			</tr>
+
+			<tr>
+				<td>City</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+
+			<tr>
+				<td><input type="radio" value= "Fresher" name="check" id="fre">Fresher</td>
+				 <td><input type="radio" value="Experience" name="check" id="exp">Experience</td>
+			</tr> 
+
+			
+
+					<tr id="id1" style="display: none" >
+						<td>Comapany Name</td>
+						<td><input type="text" name="cname"></td>
+					</tr>
+
+					<tr id="id2" style="display: none">
+						<td>Total exp</td>
+						<td><input type="text" name="exp"></td>
+					</tr>
+
+					<tr id="id3" style="display: none">
+						<td>Current CTC</td>
+						<td><input type="text" name="ctc"></td>
+					</tr>
+		    
+
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+
+			<tr>
+				<td>phone</td>
+				<td><input type="number" name="phno"></td>
+			</tr>
+
+			<tr>
+				<td><button>Submit</button></td>
+				<td><button>Reset</button></td>
+			</tr>
+		</table>
+	</center>
+</form>
+</body>
+</html>

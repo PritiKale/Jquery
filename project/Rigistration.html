@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <style type="text/css">
+       	div{
+
+			 background-color: #000123;
+       	     width: 90%;
+       		 padding: 5px;
+       		 color: white;
+
+
+       	   }
+
+       	   input[type="text"],input[type="number"],input[type="date"],input[list],select
+       	   {
+       	   	  padding: 8px;
+       	   	  border-radius: 4px;
+       	   	  width: 80%;
+       	   }
+
+       	   input[type="submit"]
+       	   { 
+
+       	   	  color: red;
+       	   	  width: 40%;
+       	   	
+          }
+
+
+       </style>
+       <script src="jQuery.js"></script>
+       <script type="text/javascript">
+
+       	 $(document).ready(function()
+
+   	   {
+      
+           $(document).ready(function()
+           {
+             $("div").fadeIn(3000);
+           });
+
+       });
+  </script
+       </script>
+</head>
+<body background="#bdb76b">
+	<br><br><br><br>
+	
+	<center>
+	<div style="display: none">
+
+	   <h1>Job Registration form</h1>
+		<table cellpadding="8" width="90%" border="1">
+			
+
+	
+		
+		<tr>
+			<td>Register Id 
+			    <input type="text">
+		    </td>
+			
+			<td>Year of passing 
+			
+				<select> 
+				   <option>-----Select-------</option>
+				   <option>2015</option>
+				   <option>2016</option>
+				   <option>2017</option>
+				   <option>2018</option>
+				   <option>2019</option>
+			</select>
+		</td>
+
+		</tr>
+
+		
+
+		<tr>
+			<td>Name 
+			<input type="text" placeholder="Enter the full name"></td>
+			
+			<td>Reference
+			   <select>
+				  <option>-----Select options-----</option>
+				  <option>webside</option>
+				  <option>Friends</option>
+				  <option>Company</option>
+              </select>
+		    </td>
+		</tr>
+
+		<tr>
+			<td>City
+			<input list="mylist" name="selected city">
+			<datalist name="mylist">
+				<option value="Akola">akola</option>
+				<option value="Pune">Pune</option>
+				<option value="Indapur">Indapur</option>
+				<option value="Pandharpur">Pandharpur</option>
+				<option value="Solapur">Solapur</option>
+				<option value="Mumbaie">Mumbaie</option>
+				<option value="Baramti">Baramti</option>
+				<option value="Amravti">Amravti</option>
+
+			</datalist>
+
+		</td>
+
+			
+			<td>Exprience
+			<input type="number" name=""></td>
+		</tr>
+
+
+		<tr>
+			<td>Phone no 
+			<input type="number" name=""></td>
+			
+			<td>Address
+			<input type="text" name=""></td>
+
+		</tr>
+
+		<tr>
+			<td>Education
+				<select>
+				  <option>-----Select options-----</option>
+				  <option>BE</option>
+				  <option>BSC</option>
+				  <option>BCA</option>
+              </select>
+		    </td>
+
+		
+
+	
+			<td>Branch 
+		    <select>
+				  <option>-----Select options-----</option>
+				  <option>Computer</option>
+				  <option>It</option>
+				  <option>Civil</option>
+              </select>
+		    </td>
+
+		</tr>
+
+		<tr>
+
+		    <td>Date of Registeration
+		    <input type="date" name=""></td>
+		
+
+		
+		
+		
+			<td>Pan card
+			<input type="text" name="">
+			</td>	
+         </tr>
+			
+    <tr>
+			<td>Gender 
+		     <input type="radio" name="g">Male
+		     <input type="radio" name="g">Female</td>
+
+		
+
+		</tr>
+			
+			<td>Skills</td>
+			<td colspan="3">
+				<table cellpadding="5" border="1">
+					<tr>
+						<td>C lagg
+						 <input type="checkbox" name="">	
+					    </td>
+
+					    <td>Cpp
+						 <input type="checkbox" name="">	
+					    </td>
+
+					    <td>Core Java
+						 <input type="checkbox" name="">	
+					    </td>
+
+					    <td>PHP
+						 <input type="checkbox" name="">	
+					    </td>
+
+					    <td>Web Programing
+						 <input type="checkbox" name="">	
+					    </td>
+					</tr>
+
+					<tr>
+					<td>Python
+						 <input type="checkbox" name="">	
+					    </td>
+
+					    <td>DB-sql
+						 <input type="checkbox" name="">	
+					    </td>
+
+					    <td>DB-pc/sql
+						 <input type="checkbox" name="">	
+					    </td>
+
+					    <td>Unix
+						 <input type="checkbox" name="">	
+					    </td>
+
+					    <td>Android
+						 <input type="checkbox" name="">	
+					    </td>	
+					</tr>
+
+				</table>
+                      
+               <tr>
+					<td><input type="submit" value="Regsiter"></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="cancel"></td>
+			  </tr>
+
+					
+				</table>
+			</td>
+		</tr>
+
+</table>
+	</center>
+</div>
+</body>
+</html>

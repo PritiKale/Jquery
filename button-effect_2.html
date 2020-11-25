@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script  src="jquery.js"></script>
+     
+     <script type="text/javascript">
+     	 $(document).ready(function()
+       {
+          $("#b1").click(function()
+          {
+            $("body").css({"background-color":"crimson"});
+          });
+
+          $("#b2").click(function()
+          {
+            $("body").css({"background-color":"red"});
+          });
+
+          $("#b3").click(function()
+          {
+            $("body").css({"background-color":"blue"});
+          });
+
+          $("#b4").click(function()
+          {
+            $("body").css({"background-color":"green"});
+          });
+          
+          
+          
+       });
+     </script>
+
+      <style type="text/css">
+      button{
+            height:60px; 
+            width:100px;
+            border-radius: 10px;
+            background: white;
+            border: 1px solid red;
+            padding: 10px;
+            font-size: 18px;
+            
+          }
+     </style>
+</head>
+<body>
+  <br><br><br>
+ <button id="b1">Crimson</button>
+ <button id="b2">Red</button>
+ <button id="b3">Blue</button>
+ <button id="b4">Green</button>
+ 
+
+</body>
+</html>

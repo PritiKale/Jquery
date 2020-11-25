@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#but1").click(function()
+			{
+			  $("div").addClass("myclass");
+			});
+
+			$("#but2").click(function()
+			{
+			  $("div").removeClass("myclass");
+			});
+
+			$("#but3").click(function()
+			{
+			  $("div").toggleClass("myclass");
+			});
+
+			$("#but4").click(function()
+			{
+			  alert($("div").hasClass("myclass"));
+			});
+ 
+		});
+	</script>
+
+	<style type="text/css">
+	
+	.myclass{
+			  background-color: teal;
+			  padding: 10px;
+			  width: 30%;
+			  border-radius: 10px;
+	        }	
+	</style>
+</head>
+<body>
+
+<div>
+	<h1>Amazon</h1>
+	<p>Welcome to amazon shopping</p>
+</div>
+
+<br><br>
+
+<button id="but1">Add class</button>
+
+<button id="but2">Remove class</button>
+
+<button id="but3">Toggle class</button>
+
+<button id="but4">Has class</button>
+
+
+
+</body>
+</html>

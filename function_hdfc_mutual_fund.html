@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#calid").click(function()
+			{
+				function hdfc()
+				{
+					var lumsum_amt=parseInt(document.f1.lamt.value);
+					var no_of_year=parseInt(document.f1.select.value);
+
+					// var i_amt=0;
+					// var lumsum_amt=0;
+
+					if(no_of_year==1)
+					{
+						var i_amt=lumsum_amt * 0.05;
+						var maturity_amt=i_amt + lumsum_amt;
+
+						document.getElementById("span1").innerHTML=i_amt;
+						document.getElementById("span2").innerHTML=maturity_amt;
+
+					}
+
+					else if(no_of_year==5)
+					{
+						var i_amt=lumsum_amt * 0.10;
+						var maturity_amt=i_amt + lumsum_amt;
+
+						document.getElementById("span1").innerHTML=i_amt;
+						document.getElementById("span2").innerHTML=maturity_amt;
+
+					}
+
+					else if(no_of_year==10)
+					{
+						var i_amt=lumsum_amt * 0.15;
+						var maturity_amt=i_amt + lumsum_amt;
+
+						document.getElementById("span1").innerHTML=i_amt;
+						document.getElementById("span2").innerHTML=maturity_amt;
+
+					}
+
+					else if(no_of_year==15)
+					{
+						var i_amt=lumsum_amt * 0.20;
+						var maturity_amt=i_amt + lumsum_amt;
+
+						document.getElementById("span1").innerHTML=i_amt;
+						document.getElementById("span2").innerHTML=maturity_amt;
+
+					}
+
+
+				    else
+				    {
+					  document.write("Invalid year");
+				    }
+					
+				}
+				hdfc();
+			});
+		});
+	</script>
+</head>
+<body>
+<form name="f1">
+	<center>
+		<table border="1" cellpadding="10">
+			<tr>
+				<td colspan="2"><h1>HDFC Mutual fund</h1></td>
+			</tr>
+
+			<tr>
+				<td>Lumsum amount</td>
+				<td><input type="text" name="lamt"></td>
+			</tr>
+
+			<tr>
+				<td>No of year</td>
+				<td><select id="selected_year" name="select">
+					<option>---select year---</option>
+					<option>1</option>
+					<option>5</option>
+					<option>10</option>
+					<option>15</option>
+
+				</select>
+			</td>
+			</tr>
+
+			<tr>
+				
+				<td><input type="button" value="Calculate" id="calid"></td>
+				<td><input type="reset" value="Reset"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">Intrest Amount is: <span id="span1"></span></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">Maturity Amount is: <span id="span2"></span></td>
+			</tr>
+		</table>
+	</center>
+</form>
+</body>
+</html>

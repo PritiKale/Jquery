@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.myclass{
+					font-size: 50px;
+					padding: 10px;
+					width: 300px;
+					background: teal;
+				}
+	</style>
+
+	<script src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#a").click(function()
+			{
+				$("#a").addClass("myclass");
+			});
+
+			$("#b").dblclick(function()
+			{
+				$("#b").addClass("myclass");
+			});
+
+			$("#c").mouseenter(function()
+			{
+				$("#c").addClass("myclass");
+			});
+
+			$("#d").mouseleave(function()
+			{
+				$("#d").addClass("myclass");
+			});
+
+
+		});
+	</script>
+
+</head>
+<body>
+
+<h1 id="a"> click here</h1>
+
+<br><br>
+
+<h1 id="b">dblclick here</h1>
+
+<br><br>
+
+<h1 id="c">mouse enter </h1>
+
+<br><br>
+
+<h1 id="d">mouse leave </h1>
+
+<br><br>
+
+
+</body>
+</html>

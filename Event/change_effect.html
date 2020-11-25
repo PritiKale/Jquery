@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="jquery.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("select").change(function()
+			{
+				var color=document.getElementById("mycolor").value;
+				document.getElementById("myspan").innerHTML=color;
+				document.bgColor=color;
+			});
+		});
+	</script>
+</head>
+<body>
+<select id="mycolor" >
+	<option value="" selected="" disabled="">---Select Color---</option>
+	<option value="Red">Red</option>
+	<option value="Green">Green</option>
+	<option value="Blue">Blue</option>
+</select>
+
+<br><br>
+
+<p>You have selected : <span id="myspan"></span></p>
+</body>
+</html>

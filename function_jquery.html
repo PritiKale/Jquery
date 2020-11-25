@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("button").click(function()
+			{
+				function fullname()
+				{
+					var fname=document.f1.fname.value;
+					var lname=document.f1.lname.value;
+
+					document.write("full name is: "+fname+" "+lname);
+
+
+				}
+				fullname();
+			});
+		});
+	</script>
+</head>
+<body>
+<form name="f1">
+	<center>
+		<table border="1" cellpadding="10">
+		<tr>
+			<td>First Name</td>
+			<td><input type="text" name="fname"></td>
+		</tr>
+
+		<tr>
+			<td>Last Name</td>
+			<td><input type="text" name="lname"></td>
+		</tr>
+
+		<tr>
+		<td colspan="2"><button>Display</button></td>
+	    </tr>
+	</table>
+	</center>
+</form>
+</body>
+</html>

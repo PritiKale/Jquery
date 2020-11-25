@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#Permanent").click(function()
+			{
+				$("#id1").show();
+			})
+			$("#Contract").click(function()
+			{
+				$("#id1").hide();
+			})
+
+			$("#payment").click(function()
+			{
+				function emp_pay()
+				{
+					var name=document.f1.ename.value;
+       				var wages=parseInt(document.f1.wg.value);
+       				var wdays=parseInt(document.f1.wd.value);
+       				var HRA=0;
+       				var TA=0;
+       				var PF=0;
+
+       				var pay=wdays * wages;
+
+       				if(document.f1.ch1.checked==true)
+       				{
+       					HRA=pay*0.30;
+       				}
+       				if(document.f1.ch2.checked==true)
+       				{
+       					TA=pay*0.20;
+       				}
+
+					if(document.f1.ch3.checked==true)
+       				{
+       					PF=pay*0.10;
+       				}
+
+       				document.getElementById("span1").innerHTML=name;
+       				document.getElementById("span2").innerHTML=pay;
+       				document.getElementById("span3").innerHTML=HRA;
+       				document.getElementById("span4").innerHTML=TA;
+       				document.getElementById("span5").innerHTML=PF;
+
+
+
+				}
+				emp_pay();
+			});
+
+		});
+	</script>
+</head>
+<body>
+<form name="f1">
+	<center>
+		<table border="1" cellpadding="10">
+			
+			<tr>
+				<td colspan="2"><h1>Bank Employee Payment</h1></td>
+			</tr>
+
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="ename"></td>
+			</tr>
+
+			<tr>
+				<td>Wages</td>
+				<td><input type="text" name="wg"></td>
+			</tr>
+
+			<tr>
+				<td>Wdays</td>
+				<td><input type="text" name="wd"></td>
+			</tr>
+
+			<tr>
+				<td><input type="radio" value="Permanent" name="b1" id="Permanent">Permanent</td>
+				<td><input type="radio" value="On Contract" name="b1" id="Contract">On Contract</td>
+
+			</tr>
+
+			<tr id="id1" style="display: none">
+				<td colspan="2">
+				<input type="checkbox" value="HRA-30%" name="ch1">HRA-30% <br>
+				<input type="checkbox" value="PF-20%" name="ch2">PF-20%<br>
+				<input type="checkbox" value="TA-10%" name="ch3">TA-10%</td>
+
+			</tr>
+
+			<tr>
+			<td colspan="2"><center><input type="button" value="Payment" id="payment"></center></td>
+			</tr>
+
+		
+			
+			<tr>
+				<td colspan="2">Name is: <span id="span1"></span></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">Payment is: <span id="span2"></span></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">HRA is: <span id="span3"></span></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">PF is: <span id="span4"></span></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">TA is: <span id="span5"></span></td>
+			</tr>
+
+
+
+			
+			
+		</table>
+	</center>
+</form>
+</body>
+</html>

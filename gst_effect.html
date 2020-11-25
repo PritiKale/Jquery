@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!-- <script src="jquery.js"></script> -->
+
+	<script type="text/javascript">
+		
+	 	  function calculate()
+	 	  {
+
+			var name=document.f1.nm.value;
+       		var prise=document.f1.prise.value;
+       		var qty=document.f1.qty.value;
+       		var gst=document.f1.select.value;
+       		var bill=0;
+       		var GST_Amt=0;
+       		var Total_cost=0;
+
+				var bill=prise*qty;
+       			var GST_Amt=bill*gst;
+       			var Total_cost=bill + GST_Amt;
+
+       			document.f1.gst_amt.value=GST_Amt;
+       			document.f1.total.value=Total_cost;
+		        
+	 	  }
+	 	 
+	
+	</script>
+	<style type="text/css">
+		div{
+			background-color: teal;
+			color: white;
+			height: 100%;
+			width: 90%;
+			border-radius: 20px;
+
+		   }
+
+		  input[type='text']{
+		  						padding: 5px;
+		  						border-radius: 10px;
+		 					 }
+
+		 input[type='number']{
+		  						padding: 5px;
+		  						border-radius: 10px;
+		 					 }
+
+		 select{
+		  			padding: 5px;
+		  			border-radius: 10px;
+		 	   }
+
+		  input[type='submit'],input[type='button']{
+		  						                     padding: 10px;
+		  											 border-radius: 10px;
+		  											 background: crimson;
+		  											 font-size: 18px;
+		  											 color: white;
+		  											 width: 50%;
+		 					 						}	   					 
+	</style>
+</head>
+<body>
+<form name="f1">
+<br><br>
+
+   	
+   	<div>
+   		<br><br>
+	<table cellpadding="10" border="1">
+		<tr>
+			<td>Name</td><br>
+			<td>Prise</td>
+			<td>Quantity</td>
+			<td>GST</td>
+			<td>GST_Amt</td>
+			<td>Total_cost</td>
+		</tr>
+		<tr>
+			<td><input type="text" name="nm"></td>
+			<td><input type="number" name="prise"></td>
+			<td><input type="number" name="qty"></td>
+			<td>
+				<select name="select" onchange="calculate()">
+					<option>--select GST--</option>
+					<option value="0.05">5%</option>
+					<option value="0.10">10%</option>
+					<option value="0.15">15%</option>
+					<option value="0.20">20%</option>
+				</select>
+			</td>
+
+			<td><input type="text" name="gst_amt"></td>
+			<td><input type="text" name="total"></td>
+
+		</tr>
+
+		<tr>
+			<td colspan="3"><center><input type="submit"  value="Submit"></center></td>
+			<td colspan="3"><center><input type="button" value="Go To Dashbord"></center></td>
+		</tr>
+
+	</table>
+	<br><br>
+	</div>
+</form>
+</body>
+</html>
